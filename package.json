@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "parcel src/pages/*.html",
-    "build": "rm -r dist && parcel build src/pages/*.html --dist-dir public"
+    "build": "parcel build src/pages/*.html"
   },
   "keywords": [],
   "author": "",
