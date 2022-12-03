@@ -194,6 +194,7 @@ header nav ul {
 
 .about-us {
   background: #f8f8f8;
+  align-items: center;
   padding: 70px;
 }
 
@@ -205,6 +206,13 @@ header nav ul {
     align-items: center;
     padding: 20px 30px;
   }
+}
+
+.about-us img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+  flex-grow: 1;
 }
 
 .about-us .content {
@@ -224,13 +232,8 @@ header nav ul {
   font-size: 20px;
 }
 
-.about-us .content img {
-  object-fit: cover;
-  flex-grow: 1;
-}
-
 .services {
-  padding: 70px;
+  padding: 70px 70px 0;
 }
 
 @media (max-width: 1179px) {
@@ -292,6 +295,8 @@ header nav ul {
 }
 
 .realisations {
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 70px 0;
 }
 
@@ -302,13 +307,23 @@ header nav ul {
 }
 
 .realisations .title {
-  padding: 70px;
+  padding: 0 70px 30px;
 }
 
 @media (max-width: 1179px) {
   .realisations .title {
     padding: 20px 30px;
   }
+}
+
+.realisations .slider-1 .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.realisations .slider-1 .swiper-wrapper .slide-item img {
+  width: 450px;
+  height: auto;
+  object-fit: cover;
 }
 
 .customers {

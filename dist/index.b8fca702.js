@@ -532,6 +532,30 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"3cYfC":[function(require,module,exports) {
+// const swiper = new Swiper('.swiper', {
+//   slidesPerView: 3,
+//   spaceBetween: 0,
+//   freeMode: true,
+//   loop: true,
+//   autoplay: {
+//     delay: 5000,
+//   },
+//   pagination: {
+//     clickable: true,
+//   },
+// });
+const swiper = new Swiper(".swiper", {
+    loop: true,
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: false
+    },
+    slidesPerView: 3,
+    speed: 2300,
+    grabCursor: true,
+    mousewheelControl: true,
+    keyboardControl: true
+});
 
 },{}]},["7age3","3cYfC"], "3cYfC", "parcelRequire7e89")
 
