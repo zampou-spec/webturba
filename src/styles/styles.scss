@@ -195,7 +195,7 @@ header {
       width: auto;
       height: 400px;
       object-fit: cover;
-      flex-grow: 1;
+      flex-grow: 2;
     }
   }
 }
@@ -205,8 +205,11 @@ header {
   height: fit-content;
 
   @media (max-width: 1179px) {
-    padding: 20px 0;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: red;
   }
+
   .title {
     padding: 0 70px;
     padding-bottom: 30px;
@@ -220,10 +223,14 @@ header {
     .swiper-wrapper {
       transition-timing-function: linear;
       .slide-item {
+        height: fit-content;
+        width: fit-content;
+
         img {
-          width: 450px;
-          height: auto;
-          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: contain;
         }
       }
     }
@@ -231,5 +238,11 @@ header {
 }
 
 .customers {
+  padding: 70px;
+
+  @media (max-width: 1179px) {
+    padding: 70px 30px;
+  }
+
   align-items: center;
 }
