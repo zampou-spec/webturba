@@ -532,19 +532,7 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"3cYfC":[function(require,module,exports) {
-// const swiper = new Swiper('.swiper', {
-//   slidesPerView: 3,
-//   spaceBetween: 0,
-//   freeMode: true,
-//   loop: true,
-//   autoplay: {
-//     delay: 5000,
-//   },
-//   pagination: {
-//     clickable: true,
-//   },
-// });
-const swiper = new Swiper(".swiper", {
+new Swiper(".slider-1", {
     freeMode: {
         enabled: true,
         sticky: true
@@ -554,7 +542,6 @@ const swiper = new Swiper(".swiper", {
         delay: 1,
         disableOnInteraction: false
     },
-    // slidesPerView: 4,
     slidesPerView: 2,
     spaceBetween: 0,
     speed: 2300,
@@ -569,7 +556,35 @@ const swiper = new Swiper(".swiper", {
             slidesPerView: 3
         },
         2560: {
+            slidesPerView: 5
+        }
+    }
+});
+new Swiper(".slider-2", {
+    freeMode: {
+        enabled: true,
+        sticky: true
+    },
+    loop: true,
+    autoplay: {
+        delay: 1,
+        disableOnInteraction: false
+    },
+    slidesPerView: 2,
+    spaceBetween: 0,
+    speed: 2300,
+    grabCursor: true,
+    mousewheelControl: true,
+    keyboardControl: true,
+    breakpoints: {
+        768: {
             slidesPerView: 4
+        },
+        1024: {
+            slidesPerView: 5
+        },
+        2560: {
+            slidesPerView: 10
         }
     }
 });
